@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Present Day | Piperis Wiki</title>
+    <style>
+        :root {
+            --accent-red: #ff4d4d;
+            --bg-dark: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #e0e0e0;
+            --sidebar-border: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wiki-container {
+            max-width: 1100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .main-content {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+
+        h1 {
+            color: var(--accent-red);
+            font-size: 2.5rem;
+            margin-top: 0;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .back-link {
+            color: var(--accent-red);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .back-link:hover { text-decoration: underline; }
+
+        /* The Big N/A Section */
+        .na-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 0;
+            border: 2px dashed #444;
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 8px;
+        }
+
+        .na-text {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #2a2a2a; 
+            text-shadow: 3px 3px 0px var(--accent-red);
+            letter-spacing: 15px;
+            line-height: 1;
+            user-select: none;
+        }
+
+        .na-subtext {
+            color: var(--accent-red);
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-top: 15px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Infobox Sidebar */
+        .infobox {
+            background: #252525;
+            border: 1px solid var(--sidebar-border);
+            padding: 10px;
+            font-size: 0.9rem;
+            align-self: start;
+            border-radius: 4px;
+        }
+
+        .infobox-title {
+            background: var(--accent-red);
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            margin: -10px -10px 10px -10px;
+            text-transform: uppercase;
+        }
+
+        .infobox-row {
+            display: flex;
+            border-bottom: 1px solid #333;
+            padding: 8px 0;
+        }
+
+        .label { width: 40%; font-weight: bold; color: #888; }
+        .data { width: 60%; }
+
+        @media (max-width: 850px) {
+            .wiki-container { grid-template-columns: 1fr; }
+            .infobox { order: -1; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wiki-container">
+        <main class="main-content">
+            <a href="index.html" class="back-link">← Return to Main Page</a>
+            <h1>2024 - 2026: Present Day</h1>
+
+            <p>Recent developments and current activities regarding the chain are documented below.</p>
+
+            <div class="na-container">
+                <div class="na-text">N/A</div>
+                <p class="na-subtext">CURRENT DATA REDACTED<br>PENDING VERIFICATION</p>
+            </div>
+            
+            <p style="margin-top: 30px; color: #666; font-size: 0.9rem;">
+                Note: Documentation for the present era is restricted. Please check back later for verified updates.
+            </p>
+        </main>
+
+        <aside class="infobox">
+            <div class="infobox-title">Era Status</div>
+            <div class="infobox-row">
+                <div class="label">Timeframe</div>
+                <div class="data">2024-2026</div>
+            </div>
+            <div class="infobox-row">
+                <div class="label">Verfication</div>
+                <div class="data" style="color:var(--accent-red);">Incomplete</div>
+            </div>
+            <div class="infobox-row">
+                <div class="label">Visibility</div>
+                <div class="data">Restricted</div>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>
