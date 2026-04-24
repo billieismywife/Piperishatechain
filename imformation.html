@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Present Day | Piperis Wiki</title>
+    <title>Information | Piperis Wiki</title>
     <style>
         :root {
             --accent-red: #ff4d4d;
             --bg-dark: #121212;
             --card-bg: #1e1e1e;
             --text-main: #e0e0e0;
+            --text-dim: #bbb;
             --sidebar-border: #333;
         }
 
@@ -17,7 +18,7 @@
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.8; /* Increased for professional readability */
             margin: 0;
             display: flex;
             justify-content: center;
@@ -47,6 +48,15 @@
             border-bottom: 2px solid #333;
             padding-bottom: 15px;
             text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            color: var(--accent-red);
+            font-size: 1.5rem;
+            border-bottom: 1px solid #333;
+            margin-top: 40px;
+            padding-bottom: 5px;
         }
 
         .back-link {
@@ -60,41 +70,16 @@
 
         .back-link:hover { text-decoration: underline; }
 
-        /* The Big N/A Section */
-        .na-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 80px 0;
-            border: 2px dashed #444;
-            margin-top: 30px;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 8px;
+        .abstract {
+            background: rgba(255, 77, 77, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: var(--text-dim);
         }
 
-        .na-text {
-            font-size: 8rem;
-            font-weight: 900;
-            color: #2a2a2a; 
-            text-shadow: 3px 3px 0px var(--accent-red);
-            letter-spacing: 15px;
-            line-height: 1;
-            user-select: none;
-        }
-
-        .na-subtext {
-            color: var(--accent-red);
-            font-size: 0.9rem;
-            font-weight: bold;
-            letter-spacing: 4px;
-            margin-top: 15px;
-            opacity: 0.8;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        /* Infobox Sidebar */
+        /* Sidebar Style */
         .infobox {
             background: #252525;
             border: 1px solid var(--sidebar-border);
@@ -133,34 +118,62 @@
 
     <div class="wiki-container">
         <main class="main-content">
-            <a href="index.html" class="back-link">← Return to Main Page</a>
-            <h1>2024 - 2026: Present Day</h1>
+            <a href="index.html" class="back-link">← Return to Home</a>
+            <h1>Project Information</h1>
 
-            <p>Recent developments and current activities regarding the chain are documented below.</p>
-
-            <div class="na-container">
-                <div class="na-text">N/A</div>
-                <p class="na-subtext">CURRENT DATA REDACTED<br>PENDING VERIFICATION</p>
+            <div class="abstract">
+                <strong>Subject:</strong> Piperis Hate Chain Archival Protocol<br>
+                <strong>Classification:</strong> Public Documentation<br>
+                <strong>Established:</strong> 2017
             </div>
-            
-            <p style="margin-top: 30px; color: #666; font-size: 0.9rem;">
-                Note: Documentation for the present era is restricted. Please check back later for verified updates.
-            </p>
+
+            <section id="mission">
+                <h2>1. Mission Statement</h2>
+                <p>The Piperis Hate Chain Wiki is a centralized, non-biased repository dedicated to the preservation of cultural digital artifacts. Our primary objective is to maintain a chronological and factual record of the "Chain" events, ensuring that media, community sentiment, and historical milestones remain accessible for future analysis.</p>
+            </section>
+
+            <section id="scope">
+                <h2>2. Scope of Documentation</h2>
+                <p>This archive covers a wide spectrum of digital history, including but not limited to:</p>
+                <ul>
+                    <li><strong>Origin Points:</strong> Analysis of the initial 2017 triggers and first-recorded instances.</li>
+                    <li><strong>Growth Patterns:</strong> Tracking the escalation of the chain through the 2020-2023 era.</li>
+                    <li><strong>Media Preservation:</strong> Hosting and cataloging screenshots, video logs, and community interactions.</li>
+                </ul>
+            </section>
+
+            <section id="standards">
+                <h2>3. Archival Standards</h2>
+                <p>To maintain professional integrity, all contributors must adhere to the following protocols:</p>
+                <p><em>Verifiability:</em> Information must be backed by original source material whenever possible. In cases where data is missing, it is to be marked as <strong>N/A</strong> or <strong>[REDACTED]</strong> to prevent the spread of misinformation.</p>
+                <p><em>Neutrality:</em> While the subject matter may be contentious, the documentation must remain clinical and analytical. Personal biases are secondary to the historical record.</p>
+            </section>
+
+            <section id="contact">
+                <h2>4. Final Notice</h2>
+                <p>This archive is a living document. As new developments emerge in the 2024-2026 timeframe, this wiki will be updated to reflect the most current and verified data available. The maintenance of this site is hosted via GitHub Pages for maximum uptime and transparency.</p>
+            </section>
+
+            <p style="text-align: center; margin-top: 50px;">:3</p>
         </main>
 
         <aside class="infobox">
-            <div class="infobox-title">Era Status</div>
+            <div class="infobox-title">Technical Specs</div>
             <div class="infobox-row">
-                <div class="label">Timeframe</div>
-                <div class="data">2024-2026</div>
+                <div class="label">Version</div>
+                <div class="data">2.4.0</div>
             </div>
             <div class="infobox-row">
-                <div class="label">Verfication</div>
-                <div class="data" style="color:var(--accent-red);">Incomplete</div>
+                <div class="label">Last Audit</div>
+                <div class="data">April 2026</div>
             </div>
             <div class="infobox-row">
-                <div class="label">Visibility</div>
-                <div class="data">Restricted</div>
+                <div class="label">Authority</div>
+                <div class="data">Archive Admin</div>
+            </div>
+            <div class="infobox-row">
+                <div class="label">Access</div>
+                <div class="data">Open / Unrestricted</div>
             </div>
         </aside>
     </div>
